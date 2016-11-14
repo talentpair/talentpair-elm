@@ -45,9 +45,6 @@ const jerichoApp = angular.module("jerichoApp", [
 ]);
 
 // CONFIG
-jerichoApp.config(($urlRouterProvider) => {
-
-  $urlRouterProvider.otherwise(($injector) => {
-    return `/`;
-  });  
+jerichoApp.config(() => {
+  "ngInject";
 });

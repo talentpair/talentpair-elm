@@ -7,7 +7,9 @@ export default ngModule => {
 
     $stateProvider
       .state("app", {
-        url: "/",
+        url: "*path",
+        controller: "jobAppController",
+        controllerAs: "$ctrl",
         template: `Hello!`
       });
   });
