@@ -1,5 +1,5 @@
 {
-  "name": "jericho",
+  "name": "talentpair-elm",
   "version": "1.0.0",
   "description": "Customer facing stuff",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/talentpair/jericho.git"
+    "url": "git+https://github.com/talentpair/talentpair-elm.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/talentpair/jericho/issues"
+    "url": "https://github.com/talentpair/talentpair-elm/issues"
   },
-  "homepage": "https://github.com/talentpair/jericho#readme",
+  "homepage": "https://github.com/talentpair/talentpair-elm#readme",
   "dependencies": {
     "@talentpair/kyoto": "^1.0.21-master.1",
     "angular": "~1.5.5",

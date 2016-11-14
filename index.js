@@ -25,7 +25,7 @@ import "./elm-src";
 
 
 // MAIN APP DEFINITION
-const jerichoApp = angular.module("jerichoApp", [
+const tpElmApp = angular.module("tpElmApp", [
 
   // Core Modules
   "ngCookies",
@@ -43,8 +43,3 @@ const jerichoApp = angular.module("jerichoApp", [
   "ngMaterial"
 
 ]);
-
-// CONFIG
-jerichoApp.config(() => {
-  "ngInject";
-});
