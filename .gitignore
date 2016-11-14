@@ -1,0 +1,19 @@
+dist
+coverage
+.tmp
+.sass-cache
+.tern-project
+tags
+npm-debug.log
+
+_specRunner.html
+
+node_modules
+elm-stuff
+
+.idea
+.DS_Store
+
+# Python bytecode:
+*.py[co]
+*.orig
