@@ -5,6 +5,8 @@ export default ngModule => {
 
   ngModule.config(($stateProvider) => {
 
+    console.log("here");
+    
     $stateProvider
       .state("app", {
         url: "*path",
