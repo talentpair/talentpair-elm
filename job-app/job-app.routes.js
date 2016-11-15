@@ -11,8 +11,13 @@ export default ngModule => {
         controller: function JobAppController($scope) {
           $scope.widgetComponent = DapperWigget;
           $scope.widgetFlags = { phrase: "Here's my phrase" };
+          $scope.setupWidgetPorts = function (ports) {
+            ports.check.subscribe(function (n) {
+              ports.toelm.send(n);
+            });
+          };
         },
-        template: `<elm-component src="widgetComponent" flags="widgetFlags"></elm-component>`
+        template: `<elm-component src="widgetComponent" flags="widgetFlags" ports="setupWidgetPorts(ports)"></elm-component>`
       });
   });
 
