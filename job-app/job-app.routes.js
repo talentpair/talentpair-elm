@@ -17,7 +17,10 @@ export default ngModule => {
             });
           };
         },
-        template: `<elm-component src="widgetComponent" flags="widgetFlags" ports="setupWidgetPorts(ports)"></elm-component>`
+        template: `<elm-component src="widgetComponent" 
+                                  flags="widgetFlags" 
+                                  ports="setupWidgetPorts(ports)">        
+                   </elm-component>`
       });
   });
 

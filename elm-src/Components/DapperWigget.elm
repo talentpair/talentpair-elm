@@ -5,17 +5,7 @@ import Html exposing (Html, div, text, button)
 import Html.Events exposing (onClick)
 import Debug exposing (log)
 
-
-type Msg
-    = AddToText
-    | SendToJavaScript
-    | ReceiveFromJavaScript String
-
-
-type alias Flags =
-  { phrase : String
-  }
-
+import Shared.TpTypes exposing (..)
 
 -- port for sending strings out to JavaScript
 port check : String -> Cmd msg
@@ -24,7 +14,7 @@ port check : String -> Cmd msg
 port toelm : (String -> msg) -> Sub msg
 
 
-view : Flags -> Html Msg
+view : TpFlags -> Html TpMsg
 view model =
     div []
         [ button [ onClick AddToText ] [ text "-" ]
@@ -34,7 +24,7 @@ view model =
 
 
 
-update : Msg -> Flags -> ( Flags, Cmd Msg )
+update : TpMsg -> TpFlags -> ( TpFlags, Cmd TpMsg )
 update msg model =
     case msg of
 
@@ -51,13 +41,13 @@ update msg model =
 
 
 
-init : Flags -> ( Flags, Cmd Msg )
+init : TpFlags -> ( TpFlags, Cmd TpMsg )
 init flags =
     ( flags, Cmd.none )
 
 
 
-subscriptions : Flags -> Sub Msg
+subscriptions : TpFlags -> Sub TpMsg
 subscriptions model =
   toelm ReceiveFromJavaScript
 
@@ -66,7 +56,7 @@ subscriptions model =
 -- MAIN
 
 
-main : Program Flags
+main : Program TpFlags
 main =
     Html.App.programWithFlags
         { init = init
