@@ -1,5 +1,5 @@
 
-import {DapperWigget} from "src/Components/DapperWigget.elm";
+import {TpWidget} from "src/Components/TpWidget.elm";
 
 export default ngModule => {
 
@@ -9,7 +9,7 @@ export default ngModule => {
       .state("app", {
         url: "*path",
         controller: function JobAppController($scope) {
-          $scope.widgetComponent = DapperWigget;
+          $scope.widgetComponent = TpWidget;
           $scope.widgetFlags = { phrase: "Here's my phrase" };
           $scope.setupWidgetPorts = function (ports) {
             ports.check.subscribe(function (n) {

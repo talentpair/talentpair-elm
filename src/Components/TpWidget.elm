@@ -1,4 +1,4 @@
-port module DapperWigget exposing (..)
+port module TpWidget exposing (..)
 
 import Html.App
 import Html exposing (Html, div, text, button)
