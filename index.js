@@ -21,7 +21,7 @@ import "angular-moment";
 // TALENTPAIR APPS
 import "./job-app";
 import "angular-elm-components"
-import "./elm-src";
+import "./src";
 
 
 // MAIN APP DEFINITION

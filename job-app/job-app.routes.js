@@ -1,5 +1,5 @@
 
-import {DapperWigget} from "elm-src/Components/DapperWigget.elm";
+import {DapperWigget} from "src/Components/DapperWigget.elm";
 
 export default ngModule => {
 
