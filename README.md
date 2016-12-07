@@ -12,3 +12,7 @@ Example integration for an Angular 1.5 / Elm app using es6, webpack and angular-
 # Using PyCharm
 - There's a nice elm language plugin
 - You cannot mark elm-stuff as excluded
+
+
+Credits
+- https://github.com/samcal/angular-elm-components
